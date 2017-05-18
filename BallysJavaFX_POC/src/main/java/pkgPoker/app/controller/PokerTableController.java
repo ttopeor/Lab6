@@ -316,23 +316,23 @@ public class PokerTableController implements Initializable {
 		return pntCardDealt;
 	}
 
-	private PathTransition CreatePathTransition(Point2D fromPoint, Point2D toPoint, ImageView img) {
-		Path path = new Path();
-		path.getElements().add(new MoveTo(fromPoint.getX(), fromPoint.getY()));
-		path.getElements().add(new CubicCurveTo(toPoint.getX() * 2, toPoint.getY() * 2, toPoint.getX() / 3,
-				toPoint.getY() / 3, toPoint.getX(), toPoint.getY()));
+//	private PathTransition CreatePathTransition(Point2D fromPoint, Point2D toPoint, ImageView img) {
+	//	Path path = new Path();
+		//path.getElements().add(new MoveTo(fromPoint.getX(), fromPoint.getY()));
+		//path.getElements().add(new CubicCurveTo(toPoint.getX() * 2, toPoint.getY() * 2, toPoint.getX() / 3,
+			//	toPoint.getY() / 3, toPoint.getX(), toPoint.getY()));
 		// path.getElements().add(new CubicCurveTo(0, 120, 0, 240, 380, 240));
-		PathTransition pathTransition = new PathTransition();
-		pathTransition.setDuration(Duration.millis(750));
-		pathTransition.setPath(path);
-		pathTransition.setNode(img);
-		pathTransition.setOrientation(PathTransition.OrientationType.ORTHOGONAL_TO_TANGENT);
-		pathTransition.setCycleCount((int) 1f);
-		pathTransition.setAutoReverse(false);
+		//PathTransition pathTransition = new PathTransition();
+		//pathTransition.setDuration(Duration.millis(750));
+		//pathTransition.setPath(path);
+		//pathTransition.setNode(img);
+		//pathTransition.setOrientation(PathTransition.OrientationType.ORTHOGONAL_TO_TANGENT);
+		//pathTransition.setCycleCount((int) 1f);
+		//pathTransition.setAutoReverse(false);
 
-		return pathTransition;
+		//return pathTransition;
 
-	}
+	//}
 
 	private ScaleTransition CreateScaleTransition(ImageView img) {
 		ScaleTransition st = new ScaleTransition(Duration.millis(iAnimationLength), img);
